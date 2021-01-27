@@ -1,0 +1,21 @@
+package com.garrar.user.app.ui.fragment.cancel_invoice;
+
+import com.garrar.user.app.base.MvpPresenter;
+
+import java.util.HashMap;
+
+public interface CancelInvoiceIPresenter<V extends CancelInvoiceIView> extends MvpPresenter<V> {
+    void payment(HashMap<String, Object> obj);
+
+    void updateRide(HashMap<String, Object> obj);
+
+    void payuMoneyChecksum();
+
+    void paytmCheckSum(String request_id, String paymentmode);
+
+    void getBrainTreeToken();
+
+    void updatePayment(HashMap<String, Object> obj);
+
+    void getTelrLastTransactionId();
+}
